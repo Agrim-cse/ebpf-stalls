@@ -1,0 +1,56 @@
+scenarios:
+  - id: "cold_sync_io_sweep"
+    workload: "io"
+    cache_state: "cold"
+    io_sizes: [4096, 65536, 1048576]
+    concurrency_levels: [1, 2, 4]
+    cpu_contention: false
+    iterations: 10
+    seeds: [42, 1337]
+
+  - id: "warm_cache_sweep"
+    workload: "warm"
+    cache_state: "warm"
+    io_sizes: [65536, 1048576]
+    concurrency_levels: [1, 2, 4]
+    cpu_contention: false
+    iterations: 10
+    seeds: [42, 1337]
+
+  - id: "cpu_burn"
+    workload: "cpu"
+    cache_state: "none"
+    durations_ms: [20, 50, 100]
+    concurrency_levels: [1, 2, 4]
+    cpu_contention: false
+    iterations: 10
+    seeds: [42, 1337]
+
+  - id: "sched_contention"
+    workload: "sched"
+    cache_state: "none"
+    competitors: [2, 4, 8]
+    concurrency_levels: [1]
+    cpu_contention: true
+    iterations: 10
+    seeds: [42, 1337]
+
+  - id: "mixed_contention"
+    workload: "mixed"
+    cache_state: "cold"
+    io_sizes: [1048576]
+    competitors: [4]
+    concurrency_levels: [1]
+    cpu_contention: true
+    iterations: 5
+    seeds: [42]
+
+  - id: "negative_control_cpu_bg_io"
+    workload: "cpu"
+    cache_state: "none"
+    durations_ms: [50]
+    background_noise: "fio"
+    concurrency_levels: [1]
+    cpu_contention: false
+    iterations: 5
+    seeds: [42]

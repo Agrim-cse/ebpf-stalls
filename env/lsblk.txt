@@ -1,0 +1,27 @@
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0 266.1M  1 loop /snap/antigravity-cli/24
+loop1         7:1    0 262.5M  1 loop /snap/antigravity-cli/23
+loop2         7:2    0     4K  1 loop /snap/bare/5
+loop3         7:3    0  74.3M  1 loop /snap/core22/1612
+loop4         7:4    0    74M  1 loop /snap/core22/2955
+loop5         7:5    0  66.8M  1 loop /snap/core24/2124
+loop7         7:7    0  60.6M  1 loop /snap/core26/646
+loop8         7:8    0 271.2M  1 loop /snap/firefox/4848
+loop9         7:9    0 531.4M  1 loop /snap/gnome-42-2204/247
+loop10        7:10   0 531.5M  1 loop /snap/gnome-42-2204/263
+loop11        7:11   0 615.3M  1 loop /snap/gnome-46-2404/168
+loop12        7:12   0  91.7M  1 loop /snap/gtk-common-themes/1535
+loop13        7:13   0   402M  1 loop /snap/mesa-2404/1839
+loop14        7:14   0  12.9M  1 loop /snap/snap-store/1113
+loop15        7:15   0  12.2M  1 loop /snap/snap-store/1216
+loop16        7:16   0  50.3M  1 loop /snap/snapd/27738
+loop17        7:17   0  44.7M  1 loop /snap/snapd/28254
+loop18        7:18   0   500K  1 loop /snap/snapd-desktop-integration/178
+loop19        7:19   0  60.7M  1 loop /snap/core26/750
+nvme0n1     259:0    0 931.5G  0 disk 
+├─nvme0n1p1 259:1    0   100M  0 part /boot/efi
+├─nvme0n1p2 259:2    0    16M  0 part 
+├─nvme0n1p3 259:3    0   249G  0 part 
+├─nvme0n1p4 259:4    0  1015M  0 part 
+├─nvme0n1p5 259:5    0 581.4G  0 part 
+└─nvme0n1p6 259:6    0   100G  0 part /

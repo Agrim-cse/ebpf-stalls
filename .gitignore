@@ -1,0 +1,10 @@
+data/
+*.o
+*.skel.h
+vmlinux.h
+tracer/collector
+tracer/src/collector
+__pycache__/
+*.pyc
+*.parquet
+libbpf-install/

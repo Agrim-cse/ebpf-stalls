@@ -1,0 +1,11 @@
+{
+  "io_sleep_ratio_min": 0.45,
+  "sched_wait_ratio_min": 0.45,
+  "on_cpu_ratio_min": 0.75,
+  "warm_read_dur_max_ms": 5.0,
+  "abstain_phantom_io_sleep_min": 0.40,
+  "abstain_bg_noise_on_cpu_min": 0.80,
+  "abstain_mixed_ratio_min": 0.30,
+  "model_confidence_threshold": 0.60
+}
+
